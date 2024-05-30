@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 export const placeOrder = async(req,res)=>{
 
-    const frontend_url="http://localhost:5173"
+    const frontend_url="https://foot-del.netlify.app/"
 
        try {
         const newOrder = new orderModel({
